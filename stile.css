@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif
 }
 
 :root {
@@ -17,36 +17,33 @@
 
 html,
 body {
-    overflow-x: hidden;
-    /* evita scroll horizontal por 1-2px */
+    overflow-x: hidden
 }
 
 body {
     background: #dcebca;
-    color: black;
+    color: black
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit
 }
 
 .container {
     width: min(1100px, 92%);
-    margin: auto;
+    margin: auto
 }
 
 .ph {
-    opacity: .85;
+    opacity: .85
 }
 
 .muted {
-    color: var(--muted);
+    color: var(--muted)
 }
 
-/* =========================
-   HEADER
-========================= */
+/* header */
 .header {
     position: fixed;
     top: 0;
@@ -64,37 +61,37 @@ a {
 
 .header.show {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 1
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    gap: 12px
 }
 
 .logo {
     font-weight: 900;
-    letter-spacing: .4px;
+    letter-spacing: .4px
 }
 
 .nav {
     display: flex;
     gap: 12px;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .nav a {
     color: var(--muted);
     font-weight: 700;
     padding: 8px 10px;
-    border-radius: 12px;
+    border-radius: 12px
 }
 
 .nav a:hover {
     background: rgba(2, 6, 23, .05);
-    color: var(--ink);
+    color: var(--ink)
 }
 
 .header-loc {
@@ -111,18 +108,17 @@ a {
 }
 
 .header-loc i {
-    color: var(--accent2);
+    color: var(--accent2)
 }
 
-/* =========================
-   HERO
-========================= */
+/* hero */
 .hero {
     position: relative;
     min-height: 92vh;
     display: flex;
     align-items: flex-start;
-    padding: 55px 0 140px;
+    padding: 55px 0 180px;
+    /* más aire para que no se pegue con la carretera */
     overflow: hidden;
     background:
         radial-gradient(900px 520px at 15% 25%, rgba(37, 99, 235, .14), transparent 60%),
@@ -137,6 +133,7 @@ a {
     text-align: center;
     max-width: 860px;
     margin-top: 35px;
+    padding-bottom: 40px;
 }
 
 .pill {
@@ -150,16 +147,14 @@ a {
     font-size: 13px;
 }
 
-.hero h1 {
-    font-size: clamp(38px, 4.6vw, 60px);
-    line-height: 1.02;
-    margin: 14px 0 10px;
+.letra-h2 {
+    font-size: 40px
 }
 
 .subtitle {
     color: var(--muted);
     max-width: 720px;
-    margin: 0 auto 12px;
+    margin: 0 auto 12px
 }
 
 .mini-row {
@@ -167,7 +162,7 @@ a {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 16px
 }
 
 .mini {
@@ -185,19 +180,17 @@ a {
 }
 
 .mini i {
-    color: var(--accent2);
+    color: var(--accent2)
 }
 
-/* =========================
-   CARRETERA
-========================= */
+/* carretera */
 .road {
     position: absolute;
     left: 50%;
-    bottom: -140px;
+    bottom: -160px;
     transform: translateX(-50%);
     width: min(980px, 92vw);
-    height: 420px;
+    height: 440px;
     border-radius: 34px;
     background: linear-gradient(180deg, #1f2124);
     border: 1px solid rgba(2, 6, 23, .08);
@@ -247,19 +240,19 @@ a {
 
 .decor-left {
     left: 18px;
-    align-items: flex-start;
+    align-items: flex-start
 }
 
 .decor-right {
     right: 18px;
-    align-items: flex-end;
+    align-items: flex-end
 }
 
 /* semáforo pro */
 .traffic-light.pro {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
 }
 
 .tl-cap {
@@ -311,27 +304,27 @@ a {
 }
 
 .bulb.red {
-    background: rgb(239, 68, 68);
+    background: rgb(239, 68, 68)
 }
 
 .bulb.red::after {
-    background: rgba(239, 68, 68, .65);
+    background: rgba(239, 68, 68, .65)
 }
 
 .bulb.yellow {
-    background: rgb(245, 158, 11);
+    background: rgb(245, 158, 11)
 }
 
 .bulb.yellow::after {
-    background: rgba(245, 158, 11, .60);
+    background: rgba(245, 158, 11, .60)
 }
 
 .bulb.green {
-    background: rgb(34, 197, 94);
+    background: rgb(34, 197, 94)
 }
 
 .bulb.green::after {
-    background: rgba(34, 197, 94, .60);
+    background: rgba(34, 197, 94, .60)
 }
 
 .tl-pole {
@@ -339,7 +332,6 @@ a {
     height: 120px;
     border-radius: 999px;
     background: linear-gradient(180deg, rgba(2, 6, 23, .25), rgba(2, 6, 23, .14));
-    margin-top: 0px;
 }
 
 .tl-base {
@@ -354,7 +346,7 @@ a {
 .sign.pro {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
 }
 
 .sign-pole {
@@ -362,13 +354,12 @@ a {
     height: 70px;
     border-radius: 999px;
     background: linear-gradient(180deg, rgba(2, 6, 23, .22), rgba(2, 6, 23, .12));
-    margin-top: 0px;
 }
 
 .sign-shape {
     display: grid;
     place-items: center;
-    box-shadow: 0 16px 26px rgba(2, 6, 23, .10);
+    box-shadow: 0 16px 26px rgba(2, 6, 23, .10)
 }
 
 .octagon {
@@ -382,7 +373,7 @@ a {
 .octagon span {
     color: #fff;
     font-weight: 900;
-    letter-spacing: .5px;
+    letter-spacing: .5px
 }
 
 .circle {
@@ -422,13 +413,13 @@ a {
 }
 
 .rect i {
-    opacity: .95;
+    opacity: .95
 }
 
 .rect span {
     font-weight: 900;
     font-size: 12px;
-    letter-spacing: .9px;
+    letter-spacing: .9px
 }
 
 /* amarilla */
@@ -458,7 +449,7 @@ a {
 
 .diamond-inner i {
     color: rgba(2, 6, 23, .75);
-    font-size: 18px;
+    font-size: 18px
 }
 
 .diamond-lines {
@@ -493,31 +484,29 @@ a {
 }
 
 .warning-plate i {
-    color: rgba(245, 158, 11, .95);
+    color: rgba(245, 158, 11, .95)
 }
 
 .warning-plate span {
     font-size: 12px;
-    letter-spacing: .6px;
+    letter-spacing: .6px
 }
 
-/* =========================
-   SERVICIOS
-========================= */
+/* servicios */
 .services {
-    padding: 70px 0;
+    padding: 70px 0
 }
 
 .services h2 {
     text-align: center;
     font-size: 28px;
-    margin-bottom: 26px;
+    margin-bottom: 26px
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 16px;
+    gap: 16px
 }
 
 .card {
@@ -530,24 +519,24 @@ a {
 }
 
 .card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-4px)
 }
 
 .card i {
     font-size: 28px;
     color: var(--accent2);
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .card h3 {
-    margin-bottom: 8px;
+    margin-bottom: 8px
 }
 
 .card p {
-    color: var(--muted);
+    color: var(--muted)
 }
 
-/*GALERÍA (3 y 3)*/
+/* galería */
 .gallery {
     padding: 70px 0;
     background: rgba(2, 6, 23, .02);
@@ -556,95 +545,263 @@ a {
 
 .section-head {
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 18px
 }
 
 .section-head h2 {
     font-size: 28px;
-    margin-bottom: 6px;
+    margin-bottom: 6px
 }
 
-.gallery-grid {
+/* slider tipo Edge */
+.gallery-slider {
+    position: relative;
+    margin-top: 16px;
+}
+
+.gs-viewport {
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+.gs-track {
+    display: flex;
+    will-change: transform;
+}
+
+.gs-slide {
+    min-width: 100%;
+    padding: 6px;
+}
+
+.gs-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 16px;
+    border: 1px solid rgba(2, 6, 23, .12);
+    background: rgba(255, 255, 255, .92);
+    cursor: pointer;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    /* 3 columnas fijo */
-    gap: 14px;
+    place-items: center;
+    box-shadow: 0 12px 26px rgba(2, 6, 23, .18);
 }
 
+.gs-btn.prev {
+    left: 10px
+}
+
+.gs-btn.next {
+    right: 10px
+}
+
+.gs-btn:hover {
+    transform: translateY(-50%) scale(1.03)
+}
+
+.gs-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.gs-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background: rgba(2, 6, 23, .25);
+}
+
+.gs-dot.active {
+    background: rgba(2, 6, 23, .60)
+}
+
+/* tarjeta grande */
 .gallery-card {
     background: #fff;
     border: 1px solid var(--border);
-    border-radius: 22px;
-    box-shadow: 0 16px 34px rgba(2, 6, 23, .06);
+    border-radius: 26px;
+    box-shadow: 0 18px 40px rgba(2, 6, 23, .08);
     overflow: hidden;
     display: flex;
     flex-direction: column;
 }
 
+.gallery-card.big .img-slot {
+    height: 420px
+}
+
+/* más grande */
 .img-slot {
     width: 100%;
-    height: 200px;
     overflow: hidden;
     border-bottom: 1px solid rgba(2, 6, 23, .08);
     background: linear-gradient(180deg, rgba(37, 99, 235, .06), rgba(34, 197, 94, .06));
+    position: relative;
+}
+
+.img-slot::after {
+    content: "Imagen cargando...";
+    position: absolute;
+    inset: 0;
     display: grid;
     place-items: center;
     color: rgba(2, 6, 23, .45);
-    font-weight: 900;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: opacity .25s ease;
 }
 
-.img-slot img {
+.img-slot.loaded::after {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gallery-rotator {
+    width: 100%;
+    height: 100%
+}
+
+.rotator-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* llena el cajón */
+    object-position: center;
     display: block;
-    transition: transform .4s ease;
+    transform: scale(1.0);
+    transition: opacity .25s ease, transform .35s ease;
 }
 
-.gallery-card:hover img {
-    transform: scale(1.05);
+.gallery-card:hover .rotator-img {
+    transform: scale(1.03)
+}
+
+/* modo ver completa (sin recorte) */
+.gallery-rotator.fit-contain .rotator-img {
+    object-fit: contain;
+    background: rgba(2, 6, 23, .05);
 }
 
 .card-body {
-    padding: 14px 14px 16px;
+    padding: 16px 16px 18px
 }
 
 .card-body h3 {
-    font-size: 15px;
-    margin-bottom: 6px;
+    font-size: 16px;
+    margin-bottom: 6px
 }
 
 .card-body p {
     color: var(--muted);
     font-size: 13px;
-    line-height: 1.45;
+    line-height: 1.45
 }
 
-/* 
-FOOTER (como antes)
-*/
+/* pricing */
+.pricing {
+    padding: 70px 0;
+    background: rgba(2, 6, 23, .02);
+    border-top: 1px solid var(--border)
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+    align-items: stretch;
+}
+
+.plan {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: 0 16px 34px rgba(2, 6, 23, .06);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: .2s ease;
+}
+
+.plan:hover {
+    transform: translateY(-4px)
+}
+
+.plan-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.plan-name {
+    font-weight: 900;
+    font-size: 18px
+}
+
+.badge {
+    font-size: 12px;
+    font-weight: 900;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(34, 197, 94, .12);
+    color: var(--accent2);
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 14px;
+    background: rgba(2, 6, 23, .03);
+}
+
+.price .now {
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--accent2)
+}
+
+.plan-feats {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+    padding-top: 6px
+}
+
+.plan-feats li {
+    display: flex;
+    gap: 10px;
+    font-size: 13px
+}
+
+/* footer */
 .footer {
     padding: 36px 0 16px;
     border-top: 1px solid var(--border);
-    background: #dcebca;
+    background: #dcebca
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    align-items: start;
+    align-items: start
 }
 
 .footer-title {
     font-weight: 900;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
-/* Horizontal: info+botones izq / mapa der */
 .footer-info-layout {
     margin-top: 6px;
     display: grid;
@@ -657,10 +814,9 @@ FOOTER (como antes)
     display: grid;
     gap: 10px;
     color: var(--muted);
-    font-size: 14px;
+    font-size: 14px
 }
 
-/* Botones Maps horizontales */
 .footer-maps {
     margin-top: 14px;
     display: flex;
@@ -688,16 +844,15 @@ FOOTER (como antes)
 
 .btn-map:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(2, 6, 23, .15);
+    box-shadow: 0 10px 20px rgba(2, 6, 23, .15)
 }
 
 .btn-map.outline {
     background: #fff;
     color: var(--accent2);
-    border: 1px solid var(--accent2);
+    border: 1px solid var(--accent2)
 }
 
-/* Mapa: cerrado por defecto, abre con .open */
 .map-container {
     border-radius: 16px;
     overflow: hidden;
@@ -710,13 +865,13 @@ FOOTER (como antes)
 
 .map-container.open {
     max-height: 320px;
-    opacity: 1;
+    opacity: 1
 }
 
 .map-container iframe {
     width: 100%;
     height: 320px;
-    border: 0;
+    border: 0
 }
 
 .footer-bottom {
@@ -727,7 +882,7 @@ FOOTER (como antes)
     color: var(--muted);
 }
 
-/* REDES FLOTANTES */
+/* redes flotantes */
 .floating-social {
     position: fixed;
     right: 18px;
@@ -753,243 +908,26 @@ FOOTER (como antes)
 }
 
 .floating-social a:hover {
-    transform: translateY(-2px);
+    transform: translateY(-2px)
 }
 
 .facebook {
-    background: #1877f2;
+    background: #1877f2
 }
 
 .instagram {
-    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4)
 }
 
 .tiktok {
-    background: #111827;
+    background: #111827
 }
 
 .whatsapp {
-    background: #25d366;
+    background: #25d366
 }
 
-/* PRICING */
-.letra-h2 {
-    font-size: 40px;
-}
-
-.pricing {
-    padding: 70px 0;
-    background: rgba(2, 6, 23, .02);
-    border-top: 1px solid var(--border);
-}
-
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin-top: 18px;
-    align-items: stretch;
-}
-
-.plan {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 22px;
-    box-shadow: 0 16px 34px rgba(2, 6, 23, .06);
-    padding: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    transition: .2s ease;
-    width: 300px;
-}
-
-.plan:hover {
-    transform: translateY(-4px);
-}
-
-.plan-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.plan-name {
-    font-weight: 900;
-    font-size: 18px;
-}
-
-.badge {
-    font-size: 12px;
-    font-weight: 900;
-    padding: 6px 10px;
-    border-radius: 999px;
-    background: rgba(34, 197, 94, .12);
-    color: var(--accent2);
-}
-
-.badge.best {
-    background: rgba(34, 197, 94, .12);
-    color: var(--accent2);
-}
-
-.badge.dark {
-    background: rgba(34, 197, 94, .12);
-    color: var(--accent2);
-}
-
-.price {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    padding: 10px;
-    border-radius: 14px;
-    background: rgba(2, 6, 23, .03);
-}
-
-.price .now {
-    font-size: 26px;
-    font-weight: 900;
-    color: var(--accent2);
-}
-
-.plan-feats {
-    list-style: none;
-    display: grid;
-    gap: 8px;
-    padding-top: 6px;
-}
-
-.plan-feats li {
-    display: flex;
-    gap: 10px;
-    font-size: 13px;
-}
-
-.plan-feats i {
-    color: var(--accent2);
-}
-
-/* Si tienes .plan-cta en tu HTML, esto lo baja al fondo sin cambiar estilo */
-.plan .plan-cta {
-    margin-top: auto;
-}
-
-.plan-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(2, 6, 23, .12);
-}
-
-.plan-cta.outline {
-    background: #fff;
-    color: var(--accent2);
-    border: 1px solid var(--accent2);
-}
-
-.plan.featured {
-    transform: translateY(-6px);
-    border-color: rgba(37, 99, 235, .25);
-}
-
-.pricing-compare {
-    margin-top: 22px;
-}
-
-.compare-card {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 22px;
-    overflow: hidden;
-}
-
-.compare-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.compare-table th,
-.compare-table td {
-    padding: 12px;
-    border-bottom: 1px solid rgba(2, 6, 23, .08);
-}
-
-.compare-table .th-pro,
-.compare-table .td-pro {
-    background: rgba(37, 99, 235, .06);
-}
-
-.compare-total td {
-    background: rgba(34, 197, 94, .10);
-    font-weight: 900;
-}
-
-.ok {
-    color: var(--accent2);
-}
-
-.no {
-    color: red;
-}
-
-/* RESPONSIVE */
-@media (max-width: 980px) {
-    .nav {
-        display: none;
-    }
-
-    .header-loc {
-        display: none;
-    }
-
-    .decor {
-        display: none;
-    }
-
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-info-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .map-container.open {
-        max-height: 280px;
-    }
-
-    .map-container iframe {
-        height: 280px;
-    }
-
-    .pricing-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .plan.featured {
-        transform: none;
-    }
-}
-
-@media (max-width: 520px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-maps {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .btn-map {
-        justify-content: center;
-    }
-}
-
-/* CORREO LINK (hover azulito + subrayado animado) */
+/* correo */
 .correo-link {
     color: #2563eb;
     text-decoration: none;
@@ -1011,29 +949,213 @@ FOOTER (como antes)
 
 .correo-link:hover {
     color: #1d4ed8;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .correo-link:hover::after {
-    width: 100%;
+    width: 100%
 }
 
-/* PARCHE (MANTIENE DISEÑO Y NO ROMPE 3y3)
-   - Ajusta pricing sin ancho fijo en pantallas
-   - Mantiene galería 3y3 en desktop
-*/
-.pricing-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+/* responsive */
+@media (max-width:980px) {
+
+    .nav,
+    .header-loc,
+    .decor {
+        display: none
+    }
+
+    /* para que el texto NO choque con la carretera */
+    .hero {
+        padding-bottom: 210px
+    }
+
+    .road {
+        bottom: -190px;
+        height: 470px
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr
+    }
+
+    .footer-info-layout {
+        grid-template-columns: 1fr
+    }
+
+    .map-container.open {
+        max-height: 280px
+    }
+
+    .map-container iframe {
+        height: 280px
+    }
+
+    .gallery-card.big .img-slot {
+        height: 320px
+    }
+}
+
+@media (max-width:520px) {
+    .footer-maps {
+        flex-direction: column;
+        align-items: stretch
+    }
+
+    .btn-map {
+        justify-content: center
+    }
+
+    .gallery-card.big .img-slot {
+        height: 280px
+    }
+
+    .gs-btn {
+        display: none
+    }
+
+    /* en celular se ve más limpio */
+}
+
+/* ===== Ajuste fino por cajón (cover/contain + enfoque) ===== */
+
+/* por defecto: llena bonito */
+.gallery-rotator .rotator-img {
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.gallery-rotator .rotator-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ver completa (no recorta) */
+.gallery-rotator.fit-contain .rotator-img {
+    object-fit: contain;
+    background: rgba(2, 6, 23, .05);
+}
+
+/* cover pero enfocando arriba (sirve para fotos donde importa la parte superior) */
+.gallery-rotator.fit-cover-top .rotator-img {
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* cover pero enfocando un poco abajo (por si se corta lo de abajo) */
+.gallery-rotator.fit-cover-bottom .rotator-img {
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+/* ===== AJUSTE DEFINITIVO DE IMÁGENES ===== */
+
+.gallery-card.big .img-slot {
+    height: 500px;
+    /* más grande y proporcional */
+    background: #111;
+    /* si algo no carga, no se ve blanco */
+}
+
+.gallery-rotator {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.rotator-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* llena todo */
+    object-position: center;
+    /* centrado natural */
+    display: block;
+    transition: opacity .3s ease, transform .4s ease;
+}
+
+/* pequeño efecto elegante */
+.gallery-card:hover .rotator-img {
+    transform: scale(1.03);
+}
+
+/* ===== AJUSTE DEFINITIVO DE IMÁGENES ===== */
+
+.gallery-card.big .img-slot {
+    height: 500px;
+    /* más grande y proporcional */
+    background: #111;
+    /* si algo no carga, no se ve blanco */
+}
+
+.gallery-rotator {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.rotator-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* llena todo */
+    object-position: center;
+    /* centrado natural */
+    display: block;
+    transition: opacity .3s ease, transform .4s ease;
+}
+
+/* pequeño efecto elegante */
+.gallery-card:hover .rotator-img {
+    transform: scale(1.03);
+}
+
+/* Fondo definitivo del cajón */
+.gallery-card.big .img-slot {
+    background: #dcebca;
+}
+
+/* Asegura que la imagen llene completo */
+.rotator-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* separa el contenido del hero de la carretera */
+.hero-content {
+    padding-bottom: 140px;
+    /* deja aire antes de la carretera */
+}
+
+/* baja la carretera un poquito para que no choque */
+.road {
+    bottom: -180px;
+}
+
+/* en pantallas pequeñas, más aire todavía */
+@media (max-width: 768px) {
+    .hero-content {
+        padding-bottom: 190px;
+    }
+
+    .road {
+        bottom: -220px;
+        height: 360px;
+    }
 }
 
 .plan {
-    width: 100% !important;
-    /* anula width:300px si estorba */
-    max-width: 340px;
-    /* mantiene tamaño visual */
-    justify-self: center;
-}
-
-.footer-info-layout {
-    grid-template-columns: 1fr minmax(280px, 420px) !important;
+    scroll-margin-top: 120px;
 }
