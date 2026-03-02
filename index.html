@@ -9,12 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="stile.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- HEADER (aparece después del hero) -->
     <header class="header" id="mainHeader">
         <div class="container header-container">
             <div class="logo">CENTRO DE ENSEÑANZA AUTOMOVILISTICA <br> FORMAMOS VILLAMARIA</div>
@@ -32,10 +31,8 @@
         </div>
     </header>
 
-    <!-- HERO -->
     <section class="hero" id="inicio">
 
-        <!-- Decoraciones IZQ -->
         <div class="decor decor-left" aria-hidden="true">
             <div class="traffic-light pro">
                 <div class="tl-cap"></div>
@@ -61,7 +58,6 @@
             </div>
         </div>
 
-        <!-- Decoraciones DER -->
         <div class="decor decor-right" aria-hidden="true">
             <div class="traffic-light pro">
                 <div class="tl-cap"></div>
@@ -82,7 +78,6 @@
                 <div class="sign-pole"></div>
             </div>
 
-            <!-- Señal amarilla MEJORADA -->
             <div class="sign pro sign-warning">
                 <div class="sign-shape diamond">
                     <div class="diamond-inner">
@@ -100,13 +95,17 @@
             </div>
         </div>
 
-        <!-- Carretera MÁS LARGA -->
         <div class="road" aria-hidden="true"></div>
 
-        <!-- Contenido -->
         <div class="container hero-content">
-            <p class="pill">Moto • Carro • Camión • Vehiculo publico</p>
-            <h2 class=" letra-h2">CENTRO DE ENSEÑANZA AUTOMOVILISTICA <br> FORMAMOS VILLAMARIA</h2>
+            <p class="pill">ENSEÑAMOS TODAS LAS CATEGORIAS</p>
+            <br> <br>
+            <a href="#plan-a2" class="pill">A2</a>
+            <a href="#plan-b1" class="pill">B1</a>
+            <a href="#plan-c1" class="pill">C1</a>
+            <a href="#plan-c2" class="pill">C2</a>
+            <a href="#plan-c3" class="pill">C3</a>
+            <h2 class="letra-h2">CENTRO DE ENSEÑANZA AUTOMOVILISTICA <br> FORMAMOS VILLAMARIA</h2>
 
             <p class="subtitle">
                 Aprende a conducir con seguridad y confianza. Formación clara, práctica y acompañamiento profesional.
@@ -115,13 +114,25 @@
             <div class="mini-row">
                 <div class="mini"><i class="fa-solid fa-shield-halved"></i><span>Seguridad primero</span></div>
                 <div class="mini"><i class="fa-solid fa-user-check"></i><span>Instructores certificados</span></div>
-                <div class="mini"><i class="fa-solid fa-calendar-days"></i><span>Horarios flexibles</span></div>
+                <div class="mini">
+                    <a href="#horario" class="mini-link">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Horarios flexibles</span>
+                    </a>
+                </div>
+                <br>
+                <div class="mini"><i class="fa-solid fa-dollar-sign"></i><span>Cualquier metodo de pago</span></div>
+                <div class="mini"><i class="fa-solid fa-dollar-sign"></i><span>Breb-B</span></div>
+                <div class="mini"><i class="fa-solid fa-dollar-sign"></i><span>Tranferencias Bancolombia o
+                        Davivienda</span></div>
+                <div class="mini"><i class="fa-solid fa-dollar-sign"></i><span>Datafono</span></div>
+                <div class="mini"><i class="fa-solid fa-dollar-sign"></i><span>Sistecredito</span></div>
+                <div class="mini"><i class="fa-solid fa-dollar-sign"></i><span>Addi</span></div>
             </div>
         </div>
 
     </section>
 
-    <!-- SERVICIOS -->
     <section class="services" id="servicios">
         <div class="container">
             <h2>Nuestros Servicios</h2>
@@ -148,65 +159,77 @@
         </div>
     </section>
 
-    <!-- GALERÍA CON CAJONES -->
+    <!-- Galería tipo Edge (1 grande, cambia sola, botones/dots) -->
     <section class="gallery" id="fotos">
         <div class="container">
             <div class="section-head">
                 <h2>Galería</h2>
-                <p class="muted">Cajones listos para pegar fotos y texto (mañana solo reemplazas).</p>
+                <p class="muted">Una tarjeta grande. Cambia sola. Si una foto falta, no se rompe.</p>
             </div>
-            <div class="gallery-grid">
-                <article class="gallery-card">
-                    <div class="img-slot"><img src="../imagenes/cursos-de-conduccion-1.jpg" alt=" imagen no dispopnible"
-                            width="90%">
-                    </div>
-                    <div class="card-body">
-                        <h3>Vehículo</h3>
-                        <p class="ph">Unos excelentes vehiculos para aprender a conducir</p>
-                    </div>
-                </article>
 
-                <article class="gallery-card">
-                    <div class="img-slot"><img
-                            src="../imagenes/86299634-teenage-driving-school-student-sitting-in-the-car-driving-instructor-standing-next-to-him-eps-8.jpg"
-                            alt=" la imagen no se encuentra disponible"></div>
-                    <div class="card-body">
-                        <h3>Instructor</h3>
-                        <p class="ph">contamos con los mejores instructores para tu formacion</p>
-                    </div>
-                </article>
+            <div class="gallery-slider" id="gallerySlider">
+                <div class="gs-viewport">
+                    <div class="gs-track">
 
-                <article class="gallery-card">
-                    <div class="img-slot">Foto 3</div>
-                    <div class="card-body">
-                        <h3>Prácticas</h3>
-                        <p class="ph">(Descripción corta — pendiente)</p>
-                    </div>
-                </article>
+                        <!-- Slide 1 -->
+                        <article class="gs-slide">
+                            <div class="gallery-card big">
+                                <div class="img-slot">
+                                    <div class="gallery-rotator" data-fit="contain" data-interval="4200"
+                                        data-images="imagenesca/vehiculo/vehiculo_uno.jpg,imagenesca/vehiculo/vehiculo_dos.jpg,imagenesca/vehiculo/vehiculo_tres.jpg,imagenesca/vehiculo/vehiculo_cuatro.jpg,imagenesca/vehiculo/vehiculo_cinco.jpg,imagenesca/vehiculo/vehiculo_seis.jpg,imagenesca/vehiculo/vehiculo_siete.jpg,imagenesca/vehiculo/vehiculo_ocho.jpg,imagenesca/vehiculo/vehiculo_nueve.jpg,imagenesca/vehiculo/vehiculo_diez.jpg,imagenesca/vehiculo/vehiculo_once.jpg,imagenesca/vehiculo/vehiculo_doce.jpg">
+                                        <img class="rotator-img" alt="Vehículos">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Vehículos</h3>
+                                    <p class="ph">Flota lista para prácticas con acompañamiento.</p>
+                                </div>
+                            </div>
+                        </article>
 
-                <article class="gallery-card">
-                    <div class="img-slot">Foto 4</div>
-                    <div class="card-body">
-                        <h3>Camión / Carro / Moto</h3>
-                        <p class="ph">(Descripción corta — pendiente)</p>
-                    </div>
-                </article>
+                        <!-- Slide 2 (si quieres ver la foto completa, activa contain en este rotator) -->
+                        <article class="gs-slide">
+                            <div class="gallery-card big">
+                                <div class="img-slot">
+                                    <div class="gallery-rotator" data-fit="contain" data-interval="4200"
+                                        data-images="imagenesca/instructor/empleado_uno.jpg,imagenesca/instructor/empleado_dos.jpg,imagenesca/instructor/empleado_tres.jpg,imagenesca/instructor/empleado_cuatro.jpg,imagenesca/instructor/empleado_cinco.jpg,imagenesca/instructor/empleado_seis.jpg,imagenesca/instructor/empleado_siete.jpg">
+                                        <img class="rotator-img" alt="Instructores">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Instructores</h3>
+                                    <p class="ph">Formación clara, con experiencia y paciencia.</p>
+                                </div>
+                            </div>
+                        </article>
 
-                <article class="gallery-card">
-                    <div class="img-slot">Foto 5</div>
-                    <div class="card-body">
-                        <h3>Instalaciones</h3>
-                        <p class="ph">(Descripción corta — pendiente)</p>
-                    </div>
-                </article>
+                        <!-- Slide 3 -->
+                        <article class="gs-slide">
+                            <div class="gallery-card big">
+                                <div class="img-slot">
+                                    <div class="gallery-rotator" data-fit="contain" data-interval="4200"
+                                        data-images="imagenesca/practica/practica_uno.jpg,imagenesca/practica/practica_dos.jpg,imagenesca/practica/practica_tres.jpg,imagenesca/practica/practica_cuatro.jpg,imagenesca/practica/practica_cinco.jpg,imagenesca/practica/practica_seis.jpg,imagenesca/practica/practica_siete.jpg">
+                                        <img class="rotator-img" alt="Prácticas">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Prácticas</h3>
+                                    <p class="ph">Ejercicios reales para ganar confianza en la vía.</p>
+                                </div>
+                            </div>
+                        </article>
 
-                <article class="gallery-card">
-                    <div class="img-slot">Foto 6</div>
-                    <div class="card-body">
-                        <h3>Equipo</h3>
-                        <p class="ph">(Descripción corta — pendiente)</p>
                     </div>
-                </article>
+                </div>
+
+                <button class="gs-btn prev" type="button" aria-label="Anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="gs-btn next" type="button" aria-label="Siguiente">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <div class="gs-dots" aria-label="Indicadores"></div>
             </div>
         </div>
     </section>
@@ -220,11 +243,9 @@
 
             <div class="pricing-grid">
 
-                <!-- PLAN 1 -->
-                <article class="plan">
+                <article class="plan" id="plan-a2">
                     <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos"
                         target="_blank">
-
                         <div class="plan-top">
                             <div class="plan-name">A2</div>
                             <div class="badge">Moto 👍</div>
@@ -242,16 +263,15 @@
                         <ul class="plan-feats">
                             <li>28 horas teoricas</li>
                             <li>15 horas practicas</li>
+                            <li>Examenes medicos incluidos</li>
+                            <li>Pagos en trancito incluidos</li>
                         </ul>
-
                     </a>
                 </article>
 
-                <!-- PLAN 2 -->
-                <article class="plan featured">
+                <article class="plan featured" id="plan-b1">
                     <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos"
                         target="_blank">
-
                         <div class="plan-top">
                             <div class="plan-name">B1</div>
                             <div class="badge best">Carro 👍</div>
@@ -268,16 +288,15 @@
                         <ul class="plan-feats">
                             <li>30 horas teoricas</li>
                             <li>20 horas practicas</li>
+                            <li>Examenes medicos incluidos</li>
+                            <li>Pagos en trancito incluidos</li>
                         </ul>
-
                     </a>
                 </article>
 
-                <!-- PLAN 3 -->
-                <article class="plan">
+                <article class="plan" id="plan-c1">
                     <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos"
                         target="_blank">
-
                         <div class="plan-top">
                             <div class="plan-name">C1</div>
                             <div class="badge dark">Servicio público 👍</div>
@@ -294,8 +313,9 @@
                         <ul class="plan-feats">
                             <li>36 horas teoricas</li>
                             <li>30 horas practicas</li>
+                            <li>Examenes medicos incluidos</li>
+                            <li>Pagos en trancito incluidos</li>
                         </ul>
-
                     </a>
                 </article>
 
@@ -312,11 +332,9 @@
 
             <div class="pricing-grid">
 
-                <!-- PLAN 1 -->
-                <article class="plan">
+                <article class="plan" id="plan-c2">
                     <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos"
                         target="_blank">
-
                         <div class="plan-top">
                             <div class="plan-name">C1</div>
                             <div class="badge">Servicio publico 👍</div>
@@ -334,18 +352,17 @@
                             <li>5 horas teoricas</li>
                             <li>10 horas practicas</li>
                             <li>300.000 de refrendacion</li>
+                            <li>Examenes medicos incluidos</li>
+                            <li>Pagos en trancito incluidos</li>
                         </ul>
-
                     </a>
                 </article>
 
-                <!-- PLAN 2 -->
                 <article class="plan featured">
                     <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos"
                         target="_blank">
-
                         <div class="plan-top">
-                            <div class="plan-name">C2</div>
+                            <div class="plan-name" href="#precio-c2">C2</div>
                             <div class="badge best">Servicio publico 👍</div>
                         </div>
 
@@ -361,16 +378,15 @@
                             <li>30 horas teoricas</li>
                             <li>15 horas practicas</li>
                             <li>300.000 de refrendacion</li>
+                            <li>Examenes medicos incluidos</li>
+                            <li>Pagos en trancito incluidos</li>
                         </ul>
-
                     </a>
                 </article>
 
-                <!-- PLAN 3 -->
-                <article class="plan">
+                <article class="plan" id="plan-c3">
                     <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos"
                         target="_blank">
-
                         <div class="plan-top">
                             <div class="plan-name">C3</div>
                             <div class="badge dark">Servicio publico 👍</div>
@@ -388,36 +404,36 @@
                             <li>36 horas teoricas</li>
                             <li>30 horas practicas</li>
                             <li>300.000 de refrendacion</li>
+                            <li>Examenes medicos incluidos</li>
+                            <li>Pagos en trancito incluidos</li>
                         </ul>
-
                     </a>
                 </article>
 
             </div>
         </div>
     </section>
+
     <section>
         <div class="container">
             <div class="section-head">
-                <h2 class="letra-h2">COMBOS </h2>
+                <h2 class="letra-h2">COMBOS</h2>
                 <p class="muted ph">Aqui puedes conseguir los mejores precios para recategorizar</p>
             </div>
 
             <div class="pricing-grid">
 
-                <!-- PLAN 1 -->
                 <article class="plan">
                     <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos"
                         target="_blank">
-
                         <div class="plan-top">
                             <div class="plan-name">A2+B1</div>
                             <div class="badge">Moto + Carro 👍</div>
                         </div>
 
                         <p class="plan-desc muted">
-                            permite manejar motocicletas de cualquier cilindraje (A2) y vehículos particulares
-                            pequeños/medianos como automóviles, camperos y camionetas (B1)
+                            Permite manejar motocicletas (A2) y vehículos particulares como automóviles, camperos y
+                            camionetas (B1)
                         </p>
 
                         <div class="price">
@@ -427,25 +443,23 @@
                         <ul class="plan-feats">
                             <li>58 horas teoricas</li>
                             <li>35 horas practicas</li>
+                            <li>Examenes medicos incluidos</li>
+                            <li>Pagos en trancito incluidos</li>
                         </ul>
-
                     </a>
                 </article>
 
-                <!-- PLAN 2 -->
                 <article class="plan featured">
                     <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos"
                         target="_blank">
-
                         <div class="plan-top">
                             <div class="plan-name">A2+C1</div>
                             <div class="badge best">Moto + Servicio publico 👍</div>
                         </div>
 
                         <p class="plan-desc muted">
-                            permite conducir motocicletas de cualquier cilindraje (
-                            cc) y vehículos particulares/públicos livianos (automóviles, camionetas, camperos). Es una
-                            opción integral para manejar moto y carro particular/público </p>
+                            Opción integral para manejar moto (A2) y servicio público liviano (C1).
+                        </p>
 
                         <div class="price">
                             <span class="now">$2.800.000</span>
@@ -454,14 +468,16 @@
                         <ul class="plan-feats">
                             <li>64 horas teoricas</li>
                             <li>45 horas practicas</li>
+                            <li>Examenes medicos incluidos</li>
+                            <li>Pagos en trancito incluidos</li>
                         </ul>
-
                     </a>
                 </article>
 
             </div>
         </div>
     </section>
+
     <section>
         <div class="container">
             <div class="section-head">
@@ -471,19 +487,17 @@
 
             <div class="pricing-grid">
 
-                <!-- PLAN 1 -->
                 <article class="plan">
                     <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos"
                         target="_blank">
-
                         <div class="plan-top">
-                            <div class="plan-name">Manejo defencivo</div>
-                            <div class="badge">categorias <br> c1, c2, c3 👍</div>
+                            <div class="plan-name">Manejo defensivo</div>
+                            <div class="badge">categorias<br>c1, c2, c3 👍</div>
                         </div>
 
                         <p class="plan-desc muted">
-                            Conjunto de técnicas de conducción enfocadas en prevenir accidentes anticipándose a
-                            situaciones de riesgo, errores de terceros y condiciones adversas
+                            Técnicas de conducción enfocadas en prevenir accidentes anticipándose a riesgos y
+                            condiciones adversas.
                         </p>
 
                         <div class="price">
@@ -491,59 +505,52 @@
                         </div>
 
                         <ul class="plan-feats">
-                            <li>58 horas teoricas</li>
-                            <li>35 horas practicas</li>
+                            <li>Duración según plan</li>
                         </ul>
-
                     </a>
                 </article>
 
-                <!-- PLAN 2 -->
                 <article class="plan featured">
                     <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos"
                         target="_blank">
-
                         <div class="plan-top">
-                            <div class="plan-name">Teorico practico</div>
-                            <div class="badge best">cualquier<br> vehiculos 👍</div>
+                            <div class="plan-name">Teórico práctico</div>
+                            <div class="badge best">cualquier<br>vehiculos 👍</div>
                         </div>
 
                         <p class="plan-desc muted">
-                            evalúa conocimientos de normas viales (teoría) y habilidades al volante (práctica) para
-                            garantizar una conducción segura y legal</p>
+                            Evalúa conocimientos de normas viales (teoría) y habilidades al volante (práctica).
+                        </p>
 
                         <div class="price">
                             <span class="now">Segun la categoria</span>
                         </div>
 
                         <ul class="plan-feats">
-                            <li>64 horas teoricas</li>
-                            <li>45 horas practicas</li>
+                            <li>Incluye teoría + práctica</li>
                         </ul>
-
                     </a>
                 </article>
+
                 <article class="plan featured">
                     <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos"
                         target="_blank">
-
                         <div class="plan-top">
                             <div class="plan-name">Examen de idoneidad</div>
                             <div class="badge best">todos los vehiculos 👍</div>
                         </div>
 
                         <p class="plan-desc muted">
+                            Prueba de conocimientos y práctica para validar habilidades de conducción.
                         </p>
 
                         <div class="price">
-                            <span class="now">$2.800.000</span>
+                            <span class="now">segun la categoria</span>
                         </div>
 
                         <ul class="plan-feats">
-                            <li>64 horas teoricas</li>
-                            <li>45 horas practicas</li>
+                            <li>Teoría + práctica</li>
                         </ul>
-
                     </a>
                 </article>
 
@@ -551,8 +558,6 @@
         </div>
     </section>
 
-
-    <!-- FOOTER parte inferior donde apaerece el mapa -->
     <footer class="footer" id="contacto">
         <div class="container footer-grid">
             <div>
@@ -560,11 +565,37 @@
 
                 <div class="footer-info-layout">
                     <div class="footer-details">
-                        <!-- informacionn personal hora de apertura y cierre -->
                         <div class="footer-info">
-                            <div><b>Dirección:</b> <span class="muted">Entrada de Villamaría, Villamaría, Caldas</span>
+
+                            <div>
+                                <b>Dirección:</b>
+                                <span class="muted">
+                                    Entrada de Villamaría, Villamaría, Caldas
+                                </span>
                             </div>
-                            <div><b>Horario:</b> <span class="muted">Lun a Sáb · 8:00 AM - 6:00 PM</span></div>
+
+                            <!-- 👇 ESTE ES EL ID CORRECTO -->
+                            <div id="horario">
+                                <b>Horarios flexibles:</b>
+                                <span class="muted">
+                                    <br><br>
+
+                                    Horarios Atención en oficina<br>
+                                    Lunes a viernes 6:00 am – 10:00 pm<br>
+                                    Sábados 7:00 am – 7:00 pm<br>
+                                    Domingo y Festivos: 7:00 am – 3:00 pm<br><br>
+
+                                    Horario Teóricos<br>
+                                    Lunes a Viernes 6:00 am – 10:00 pm<br>
+                                    Sábado 7:00 am - 7:00 pm<br>
+                                    Domingo y Festivos: 7:00 am – 3:00 pm<br><br>
+
+                                    Horario Prácticos<br>
+                                    Lunes a Viernes 6:00 am – 10:00 pm<br>
+                                    Sábado, Domingo y Festivos: 7:00 am – 3:00 pm
+                                </span>
+                            </div>
+
                         </div>
 
                         <div class="footer-maps">
@@ -586,32 +617,16 @@
 
             <div>
                 <div class="footer-title">Contáctanos</div>
+
                 <p class="muted">
                     Escríbenos para información de horarios, inscripciones y disponibilidad de prácticas.
                 </p>
+
                 <p class="muted" style="margin-top:10px">
                     <b>Correo:</b>
-                    <a href="#" class="correo-link" onclick="abrirCorreo(event)">
+                    <a href="#" class="correo-link" data-gmail-to="Formamosvillamariasas@gmail.com">
                         Formamosvillamariasas@gmail.com
                     </a>
-
-                    <script>
-                        function abrirCorreo(e) {
-                            e.preventDefault();
-
-                            const gmailURL = "https://mail.google.com/mail/?view=cm&fs=1&to=Formamosvillamariasas@gmail.com&su=Información%20sobre%20cursos";
-                            const mailtoURL = "mailto:Formamosvillamariasas@gmail.com?subject=Información sobre cursos";
-
-                            // Si está logueado en Google abrirá Gmail, si no funciona, usa mailto
-                            const nuevaVentana = window.open(gmailURL, "_blank");
-
-                            setTimeout(() => {
-                                if (!nuevaVentana || nuevaVentana.closed || typeof nuevaVentana.closed == 'undefined') {
-                                    window.location.href = mailtoURL;
-                                }
-                            }, 500);
-                        }
-                    </script>
                 </p>
             </div>
         </div>
@@ -621,7 +636,6 @@
         </div>
     </footer>
 
-    <!-- Redes flotantes (derecha siempre) -->
     <div class="floating-social">
         <a href="https://www.facebook.com/CEAFORMAMOSVILLAMARIASAS?mibextid=wwXIfr&rdid=ndcVXwJcJr75mqOf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AsZu56faq%2F%3Fmibextid%3DwwXIfr%26ref%3D1#"
             class="facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
@@ -637,8 +651,9 @@
             target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-tiktok"></i>
         </a>
+
         <a href="https://wa.me/573226627708?text=Hola%20quiero%20información%20sobre%20los%20cursos" class="whatsapp"
-            target="_blank" rel="noopener noreferrer">
+            aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
